@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { instrumentSans, instrumentSerif } from "@/lib/fonts";
-import { Preloader } from "@/components/ui/preloader";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { SmoothScroll } from "@/components/layout/smooth-scroll";
 import "./globals.css";
+
+const Preloader = dynamic(
+  () => import("@/components/ui/preloader").then((mod) => mod.Preloader),
+  { ssr: false }
+);
+
+const SmoothScroll = dynamic(
+  () => import("@/components/layout/smooth-scroll").then((mod) => mod.SmoothScroll),
+  { ssr: false }
+);
 
 export const metadata: Metadata = {
   title: "Molina Rana | B2B Brand & Growth Marketing Leader",

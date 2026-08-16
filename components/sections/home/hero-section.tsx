@@ -2,9 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import gsap from "gsap";
-import Threads from "@/components/ui/Threads";
+
+const Threads = dynamic(() => import("@/components/ui/Threads"), { ssr: false });
 
 export function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -114,7 +116,7 @@ export function HeroSection() {
       )}
 
       {/* Subtle Background Glow */}
-      <div className="absolute top-1/4 right-1/4 w-[450px] h-[450px] bg-primary/5 rounded-full blur-[130px] pointer-events-none z-0 transform-gpu" />
+      <div aria-hidden="true" className="absolute top-1/4 right-1/4 w-[450px] h-[450px] bg-primary/5 rounded-full blur-[130px] pointer-events-none z-0 transform-gpu contain-strict" />
 
       {/* Headline Block: Top on Mobile (order-1), Bottom on Desktop (sm:order-2) */}
       <div className="w-full flex-shrink-0 pt-2 sm:pt-4 pb-2 sm:pb-4 relative z-10 order-1 sm:order-2">

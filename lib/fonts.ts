@@ -4,6 +4,7 @@ export const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   variable: "--font-instrument-sans",
   display: "swap",
+  preload: true,
 });
 
 export const instrumentSerif = Instrument_Serif({
@@ -12,4 +13,5 @@ export const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
   variable: "--font-instrument-serif",
   display: "swap",
+  preload: true,
 });

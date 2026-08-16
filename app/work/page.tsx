@@ -1,8 +1,16 @@
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { WorkHero } from "@/components/sections/work/work-hero";
-import { CaseStudiesSection } from "@/components/sections/work/case-studies-section";
-import { LinkedInSection } from "@/components/sections/work/linkedin-section";
-import { CTASection } from "@/components/sections/home/cta-section";
+
+const CaseStudiesSection = dynamic(() =>
+  import("@/components/sections/work/case-studies-section").then((mod) => mod.CaseStudiesSection)
+);
+const LinkedInSection = dynamic(() =>
+  import("@/components/sections/work/linkedin-section").then((mod) => mod.LinkedInSection)
+);
+const CTASection = dynamic(() =>
+  import("@/components/sections/home/cta-section").then((mod) => mod.CTASection)
+);
 
 export const metadata: Metadata = {
   title: "Selected Work & Case Studies | Molina Rana",

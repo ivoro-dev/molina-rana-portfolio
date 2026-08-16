@@ -142,7 +142,7 @@ export function Footer() {
         <div className="pt-8 pb-4 flex items-center justify-center border-t border-zinc-900/80">
           <p
             aria-hidden="true"
-            className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-sans font-black tracking-tighter text-zinc-700/60 hover:text-primary/30 transition-colors duration-500 text-center leading-none uppercase select-none w-full"
+            className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-sans font-black tracking-tighter text-zinc-400 hover:text-primary transition-colors duration-500 text-center leading-none uppercase select-none w-full"
           >
             MOLINA RANA
           </p>

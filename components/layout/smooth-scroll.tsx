@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 import gsap from "gsap";
-import "lenis/dist/lenis.css";
 
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
   useEffect(() => {

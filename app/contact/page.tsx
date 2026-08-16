@@ -1,6 +1,10 @@
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { ContactFormSection } from "@/components/sections/contact/contact-form-section";
-import { ContactFAQSection } from "@/components/sections/contact/contact-faq-section";
+
+const ContactFAQSection = dynamic(() =>
+  import("@/components/sections/contact/contact-faq-section").then((mod) => mod.ContactFAQSection)
+);
 
 export const metadata: Metadata = {
   title: "Contact & Book a Strategy Call | Molina Rana",
