@@ -133,7 +133,6 @@ export function AboutHero() {
               src={aboutHeroData.images.portrait.url}
               alt={aboutHeroData.images.portrait.alt}
               fill
-              unoptimized
               sizes="(max-width: 768px) 100vw, 40vw"
               className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
             />
@@ -152,7 +151,6 @@ export function AboutHero() {
               src={aboutHeroData.images.landscape.url}
               alt={aboutHeroData.images.landscape.alt}
               fill
-              unoptimized
               sizes="(max-width: 768px) 100vw, 60vw"
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />

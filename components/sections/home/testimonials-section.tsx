@@ -205,10 +205,10 @@ export function TestimonialsSection() {
                   />
                 </div>
                 <div>
-                  <h4 className="text-sm sm:text-base font-sans font-bold text-white leading-tight">
+                  <h3 className="text-sm sm:text-base font-sans font-bold text-white leading-tight">
                     {item.author}
-                  </h4>
-                  <p className="text-xs sm:text-sm font-sans font-medium text-zinc-400 leading-tight mt-0.5">
+                  </h3>
+                  <p className="text-xs sm:text-sm font-sans font-medium text-zinc-300 leading-tight mt-0.5">
                     {item.role}
                   </p>
                 </div>

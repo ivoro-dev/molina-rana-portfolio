@@ -39,7 +39,7 @@ export function Footer() {
             <span className="text-xs font-sans font-bold uppercase tracking-widest text-primary block">
               [ NAVIGATION ]
             </span>
-            <ul className="space-y-2.5 font-sans font-medium text-base text-zinc-400">
+            <ul className="space-y-2.5 font-sans font-medium text-base text-zinc-300">
               <li>
                 <Link
                   href="/"
@@ -80,7 +80,7 @@ export function Footer() {
             <span className="text-xs font-sans font-bold uppercase tracking-widest text-primary block">
               [ EXPERTISE ]
             </span>
-            <ul className="space-y-2.5 font-sans font-medium text-base text-zinc-400">
+            <ul className="space-y-2.5 font-sans font-medium text-base text-zinc-300">
               <li>B2B Brand Strategy</li>
               <li>Demand Generation Systems</li>
               <li>Marketing Automation & Lifecycle</li>
@@ -93,7 +93,7 @@ export function Footer() {
             <span className="text-xs font-sans font-bold uppercase tracking-widest text-primary block">
               [ CONNECT ]
             </span>
-            <ul className="space-y-2.5 font-sans font-medium text-base text-zinc-400">
+            <ul className="space-y-2.5 font-sans font-medium text-base text-zinc-300">
               <li>
                 <a
                   href="mailto:molinarana05@gmail.com"
@@ -130,7 +130,7 @@ export function Footer() {
           <div className="lg:col-span-2 flex flex-col justify-start items-start lg:items-end">
             <button
               onClick={scrollToTop}
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 hover:bg-primary hover:text-[#0a0a0b] hover:border-primary transition-all duration-300 text-xs font-sans font-bold uppercase tracking-wider group cursor-pointer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-200 hover:bg-primary hover:text-[#0a0a0b] hover:border-primary transition-all duration-300 text-xs font-sans font-bold uppercase tracking-wider group cursor-pointer"
             >
               <span>Back To Top</span>
               <ArrowUpIcon className="w-4 h-4 transition-transform duration-200 group-hover:-translate-y-0.5" />
@@ -138,15 +138,18 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Giant Awwwards Brand Display Wordmark */}
+        {/* Giant Brand Display Wordmark (Decorative) */}
         <div className="pt-8 pb-4 flex items-center justify-center border-t border-zinc-900/80">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-sans font-black tracking-tighter text-zinc-800/40 hover:text-primary/20 transition-colors duration-500 text-center leading-none uppercase select-none w-full">
+          <p
+            aria-hidden="true"
+            className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-sans font-black tracking-tighter text-zinc-700/60 hover:text-primary/30 transition-colors duration-500 text-center leading-none uppercase select-none w-full"
+          >
             MOLINA RANA
-          </h1>
+          </p>
         </div>
 
         {/* Bottom Sub-Footer Legal Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-zinc-900/60 text-xs font-sans font-medium text-zinc-500">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-zinc-900/60 text-xs font-sans font-medium text-zinc-300">
           <div>
             &copy; {new Date().getFullYear()} Molina Rana. All rights reserved.
           </div>

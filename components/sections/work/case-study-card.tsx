@@ -216,7 +216,6 @@ export function CaseStudyCard({ study, index }: { study: DetailedCaseStudy; inde
                           src={slideData.image}
                           alt={slideData.caption || `${study.company} case study slide ${idx + 1}`}
                           fill
-                          unoptimized
                           priority={idx === 0}
                           sizes="(max-width: 768px) 100vw, 50vw"
                           className="object-contain transition-transform duration-700 ease-out group-hover:scale-[1.02]"

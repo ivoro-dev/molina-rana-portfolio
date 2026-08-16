@@ -119,25 +119,22 @@ export function HeroSection() {
       {/* Headline Block: Top on Mobile (order-1), Bottom on Desktop (sm:order-2) */}
       <div className="w-full flex-shrink-0 pt-2 sm:pt-4 pb-2 sm:pb-4 relative z-10 order-1 sm:order-2">
         {/* Line 1 Overflow Wrapper */}
-        <div className=" py-1">
+        <div className="py-1">
           <h1
             ref={line1Ref}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.75rem] 2xl:text-[6.5rem] font-sans font-medium text-white tracking-tight leading-[0.96] sm:leading-[0.94] opacity-0"
           >
-            Where brand meets{" "}
-            <span className="text-primary font-serif italic font-normal">growth,</span>
+            From brand <span className="text-primary">strategy</span>
           </h1>
         </div>
 
         {/* Line 2 Overflow Wrapper */}
-        <div className="   py-1 mt-0.5 sm:mt-1">
+        <div className="py-1 mt-0.5 sm:mt-1">
           <div
             ref={line2Ref}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.75rem] 2xl:text-[6.5rem] font-sans font-medium text-white tracking-tight leading-[0.96] sm:leading-[0.94] flex flex-wrap items-baseline gap-x-2.5 sm:gap-x-4 opacity-0"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.75rem] 2xl:text-[6.5rem] font-sans font-medium text-white tracking-tight leading-[0.96] sm:leading-[0.94] opacity-0"
           >
-            <span>&</span>
-            <span className="text-primary font-serif italic font-normal">strategy</span>
-            <span className="text-white font-bold">meets results.</span>
+            to <span className="text-primary">business</span> growth.
           </div>
         </div>
       </div>
@@ -145,7 +142,7 @@ export function HeroSection() {
       {/* Bio Section: Bottom on Mobile (mt-auto order-2), Upper-Right on Desktop (sm:my-auto sm:order-1) */}
       <div className="w-full flex justify-start sm:justify-end mt-auto sm:my-auto flex-shrink-0 pt-2 sm:pt-4 pb-4 sm:pb-0 relative z-10 order-2 sm:order-1">
         <div ref={bioRef} className="max-w-md sm:max-w-lg lg:max-w-xl text-left space-y-3 sm:space-y-4 opacity-0">
-          <p className="text-sm sm:text-base lg:text-lg font-sans text-zinc-300 font-normal leading-relaxed tracking-normal">
+          <p className="text-sm sm:text-base lg:text-lg font-sans text-zinc-200 font-normal leading-relaxed tracking-normal">
             I design and execute B2B marketing systems that connect brand,
             content, demand generation, and operations, from first impression to
             measurable revenue.

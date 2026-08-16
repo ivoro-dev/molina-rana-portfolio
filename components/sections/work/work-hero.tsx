@@ -162,7 +162,6 @@ export function WorkHero() {
                 alt={workHeroData.showreel.title}
                 fill
                 priority
-                unoptimized
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />

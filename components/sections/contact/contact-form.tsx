@@ -31,9 +31,9 @@ export function ContactForm() {
         <div className="w-16 h-16 rounded-full bg-primary/20 text-primary mx-auto flex items-center justify-center">
           <CheckCircleIcon className="w-10 h-10" />
         </div>
-        <h3 className="text-2xl sm:text-3xl font-sans font-bold text-white">
+        <h2 className="text-2xl sm:text-3xl font-sans font-bold text-white">
           Message Sent Successfully!
-        </h3>
+        </h2>
         <p className="text-sm sm:text-base text-zinc-300 max-w-md mx-auto leading-relaxed">
           Thank you for reaching out. I have received your message and will get back to you within 24 hours.
         </p>

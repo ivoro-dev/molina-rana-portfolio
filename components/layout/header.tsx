@@ -46,15 +46,16 @@ export function Header() {
             <Image
               src="/logos/logo.png"
               alt="Molina Rana"
-              width={240}
-              height={70}
+              width={280}
+              height={80}
               priority
-              className="h-14 sm:h-16 w-auto object-contain transition-transform group-hover:scale-105"
+              sizes="(max-width: 768px) 200px, 280px"
+              className="h-16 sm:h-[4.75rem] w-auto object-contain transition-transform group-hover:scale-105"
               onError={() => setLogoError(true)}
             />
           ) : (
-            <span className="font-serif text-3xl font-bold tracking-tight text-white group-hover:text-primary transition-colors">
-              Molina<span className="text-primary font-sans text-2xl">.</span>
+            <span className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-white group-hover:text-primary transition-colors">
+              Molina<span className="text-primary font-sans text-3xl">.</span>
             </span>
           )}
         </Link>

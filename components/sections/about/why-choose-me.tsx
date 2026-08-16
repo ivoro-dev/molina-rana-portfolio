@@ -99,7 +99,6 @@ export function WhyChooseMe() {
                   src={card.image}
                   alt={card.alt}
                   fill
-                  unoptimized
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className={`object-cover transition-all duration-700 ease-out ${
                     isActive

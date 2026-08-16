@@ -21,7 +21,7 @@ export function ContactSidebar() {
       <div className="rounded-3xl bg-[#111315]/90 border border-zinc-800/90 p-8 sm:p-10 backdrop-blur-xl shadow-2xl space-y-8">
         {/* Quick Email Copy Action Card */}
         <div className="space-y-3 pb-6 border-b border-zinc-800/80">
-          <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 block">
+          <span className="text-xs font-mono uppercase tracking-widest text-zinc-300 block">
             DIRECT EMAIL
           </span>
           <div className="flex items-center justify-between gap-3">
@@ -35,7 +35,8 @@ export function ContactSidebar() {
               type="button"
               onClick={handleCopyEmail}
               title="Copy Email"
-              className="p-2.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-primary hover:border-primary/50 transition-colors cursor-pointer shrink-0"
+              aria-label="Copy email address"
+              className="p-2.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-200 hover:text-primary hover:border-primary/50 transition-colors cursor-pointer shrink-0"
             >
               {copiedEmail ? (
                 <CheckIcon className="w-4 h-4 text-emerald-400" />
@@ -53,7 +54,7 @@ export function ContactSidebar() {
 
         {/* Direct Phone Numbers */}
         <div className="space-y-3 pb-6 border-b border-zinc-800/80">
-          <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 block">
+          <span className="text-xs font-mono uppercase tracking-widest text-zinc-300 block">
             CALL DIRECTLY
           </span>
           <div className="space-y-1 font-sans text-base sm:text-lg font-bold text-white">
@@ -70,17 +71,17 @@ export function ContactSidebar() {
 
         {/* Location */}
         <div className="space-y-2">
-          <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 block">
+          <span className="text-xs font-mono uppercase tracking-widest text-zinc-300 block">
             LOCATION
           </span>
-          <p className="font-sans text-sm sm:text-base font-medium text-zinc-300 leading-relaxed">
+          <p className="font-sans text-sm sm:text-base font-medium text-zinc-200 leading-relaxed">
             {contactInfoData.location}
           </p>
         </div>
 
         {/* Social Links */}
         <div className="space-y-3 pt-2">
-          <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 block">
+          <span className="text-xs font-mono uppercase tracking-widest text-zinc-300 block">
             CONNECT
           </span>
           <div className="flex flex-wrap items-center gap-3">
@@ -90,7 +91,7 @@ export function ContactSidebar() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-300 hover:text-primary hover:border-primary/50 transition-colors"
+                className="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-200 hover:text-primary hover:border-primary/50 transition-colors"
               >
                 {social.name}
               </a>

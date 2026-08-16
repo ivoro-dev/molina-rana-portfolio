@@ -104,9 +104,9 @@ export function Preloader() {
       <div className="relative w-full flex flex-col items-center justify-center py-12">
         <div className="relative inline-block w-full text-center">
           {/* Base Unfilled Layer (Dark Gray) */}
-          <h1 className="text-[20vw] sm:text-[18vw] font-black tracking-tighter leading-none text-zinc-800 font-sans uppercase">
+          <div className="text-[20vw] sm:text-[18vw] font-black tracking-tighter leading-none text-zinc-800 font-sans uppercase">
             Molina
-          </h1>
+          </div>
 
           {/* Liquid Wave Fill Layer (White) clipped by height % */}
           <div
@@ -131,9 +131,9 @@ export function Preloader() {
 
             {/* Filled White Text locked in exact alignment */}
             <div className="absolute bottom-0 left-0 w-full text-center">
-              <h1 className="text-[20vw] sm:text-[18vw] font-black tracking-tighter leading-none text-white font-sans uppercase">
+              <div className="text-[20vw] sm:text-[18vw] font-black tracking-tighter leading-none text-white font-sans uppercase">
                 Molina
-              </h1>
+              </div>
             </div>
           </div>
         </div>
